@@ -4,7 +4,7 @@ defmodule RemoteChallengeMailer do
   """
 
   @doc """
-  Attempts to send an email to a user.
+  Sends an email to a user.
 
   To make the challenge simpler instead of this function receiving a user email it receives a name.
   """
