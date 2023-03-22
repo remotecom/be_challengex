@@ -1,6 +1,6 @@
 # RemoteChallengeMailer
 
-Mailer client to be used in Remote's elixir code challenge
+Simple mailer client to be used in Remote's elixir code challenge
 
 ## Installation
 
@@ -17,5 +17,5 @@ end
 ## Usage
 
 ```elixir
-RemoteChallengeMailer.send_email(%{name: "antonio"}) 
+RemoteChallengeMailer.send_email(%{name: "Ahsoka Tano"}) 
 ```
