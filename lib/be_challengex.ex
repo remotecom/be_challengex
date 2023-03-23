@@ -1,7 +1,9 @@
 defmodule BEChallengex do
   @moduledoc """
-  Mailer client to be used on Remote's code challenge
+  Top level module to be used on Remote's code challenge
   """
+
+  @names BEChallengex.Services.ListNamesFromFile.call()
 
   @doc """
   Sends an email to a user.
@@ -21,9 +23,13 @@ defmodule BEChallengex do
     end
   end
 
-
-
   def send_email(_), do: {:error, :invalid_attrs}
+
+  @doc """
+  Returns a list containing examples of user names
+  """
+  @spec list_names() :: list(String.t())
+  def list_names, do: @names
 
   defp calculate_sleep_time_in_ms, do: Enum.random(60..80)
 end
