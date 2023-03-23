@@ -16,7 +16,13 @@ end
 
 ## Usage
 
-1. send_email/1
+1. list_names/0
+
+```elixir
+BEChallengex.list_names()
+```
+
+2. send_email/1
 
 ```elixir
 BEChallengex.send_email(%{name: "Ahsoka Tano"}) 
