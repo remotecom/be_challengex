@@ -1,4 +1,4 @@
-defmodule RemoteChallengeMailer.MixProject do
+defmodule BEChallengex.MixProject do
   use Mix.Project
 
   def project do

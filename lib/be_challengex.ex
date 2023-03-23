@@ -1,4 +1,4 @@
-defmodule RemoteChallengeMailer do
+defmodule BEChallengex do
   @moduledoc """
   Mailer client to be used on Remote's code challenge
   """
@@ -20,6 +20,8 @@ defmodule RemoteChallengeMailer do
       _ -> {:ok, name}
     end
   end
+
+
 
   def send_email(_), do: {:error, :invalid_attrs}
 

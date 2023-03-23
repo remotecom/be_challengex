@@ -1,6 +1,6 @@
-# RemoteChallengeMailer
+# BE Challenge
 
-Simple mailer client to be used in Remote's elixir code challenge
+Library necessary when doing Remote's elixir code challenge
 
 ## Installation
 
@@ -9,13 +9,15 @@ Add it to your mix.exs file
 ```elixir
 def deps do
   [
-    {:remote_challenge_mailer, github: "remotecom/challenge_mailer", tag: "0.0.1"}
+    {:be_challengex, github: "remotecom/be_challengex", tag: "0.0.1"}
   ]
 end
 ```
 
 ## Usage
 
+1. send_email/1
+
 ```elixir
-RemoteChallengeMailer.send_email(%{name: "Ahsoka Tano"}) 
+BEChallengex.send_email(%{name: "Ahsoka Tano"}) 
 ```
