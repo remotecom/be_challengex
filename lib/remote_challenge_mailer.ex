@@ -15,7 +15,7 @@ defmodule RemoteChallengeMailer do
     # simulate send email
     :timer.sleep(sleep_time)
 
-    case Enum.random(1..50_000) do
+    case Enum.random(1..500_000) do
       1 -> {:error, :econnrefused}
       _ -> {:ok, name}
     end
@@ -23,5 +23,5 @@ defmodule RemoteChallengeMailer do
 
   def send_email(_), do: {:error, :invalid_attrs}
 
-  defp calculate_sleep_time_in_ms, do: Enum.random(500..900)
+  defp calculate_sleep_time_in_ms, do: Enum.random(60..80)
 end
