@@ -1,4 +1,4 @@
-# BE Challengex
+# BEChallengex
 
 Library necessary when doing Remote's elixir code challenge
 
