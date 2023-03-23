@@ -18,4 +18,13 @@ defmodule BEChallengexTest do
       assert {:ok, _} = result
     end
   end
+
+  describe "list_names/0" do
+    test "returns a list of names" do
+      result = BEChallengex.list_names()
+
+      assert is_list(result)
+      assert result != []
+    end
+  end
 end
