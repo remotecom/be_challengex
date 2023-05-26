@@ -31,5 +31,5 @@ defmodule BEChallengex do
   @spec list_names() :: list(String.t())
   def list_names, do: @names
 
-  defp calculate_sleep_time_in_ms, do: Enum.random(60..80)
+  defp calculate_sleep_time_in_ms, do: Enum.random(0..2)
 end
