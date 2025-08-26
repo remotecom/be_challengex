@@ -24,7 +24,7 @@ defmodule BEChallengexTest do
       result = BEChallengex.list_names()
 
       assert is_list(result)
-      assert result != []
+      assert length(result) > 0
     end
   end
 end
