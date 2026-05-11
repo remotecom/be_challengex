@@ -7,11 +7,9 @@ defmodule BEChallengex do
 
   @doc """
   Sends an email to a user.
-
-  To make the challenge simpler instead of this function receiving a user email it receives a name.
   """
-  @spec send_email(%{name: String.t()}) :: {:ok, String.t()} | {:error, atom()}
-  def send_email(%{name: name}) when is_binary(name) do
+  @spec send_email(%{to: String.t()}) :: {:ok, String.t()} | {:error, atom()}
+  def send_email(%{to: to}) when is_binary(to) do
     sleep_time = calculate_sleep_time_in_ms()
 
     # simulate send email
@@ -19,7 +17,7 @@ defmodule BEChallengex do
 
     case Enum.random(1..500_000) do
       1 -> {:error, :econnrefused}
-      _ -> {:ok, name}
+      _ -> {:ok, to}
     end
   end
 

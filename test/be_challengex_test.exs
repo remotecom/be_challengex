@@ -9,7 +9,7 @@ defmodule BEChallengexTest do
     test "sends the email" do
       result =
         Enum.reduce_while(1..15, nil, fn _index, _acc ->
-          case BEChallengex.send_email(%{name: "Legolas"}) do
+          case BEChallengex.send_email(%{to: "legolas@example.com"}) do
             {:ok, _name} = result -> {:halt, result}
             {:error, _reason} = result -> {:cont, result}
           end
