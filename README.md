@@ -24,6 +24,8 @@ BEChallengex.list_names()
 
 2. send_email/1
 
+Pass the recipient's email address via the `to` key:
+
 ```elixir
-BEChallengex.send_email(%{name: "Ahsoka Tano"}) 
+BEChallengex.send_email(%{to: "ahsoka@remote.com"})
 ```
